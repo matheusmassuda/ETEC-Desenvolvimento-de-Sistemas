@@ -1,10 +1,10 @@
-# [ETEC](https://etecdeibate.cps.sp.gov.br/): Desenvolvimento de Sistemas 
+# [ETEC](https://www.cps.sp.gov.br/etec/): Desenvolvimento de Sistemas 
 
-Repositório do curso de **[Desenvolvimento de Sistemas (online) da Escola Técnica Estadual de Ibaté](https://portalgeead.cps.sp.gov.br/cursos-tecnicos-online/).** Organizado por semestres, é escrito em código aberto nas linguagens abordadas durante o curso, para compartilhar materiais e conteúdos relacionados às disciplinas da grade curricular.
+Repositório do curso de **[Desenvolvimento de Sistemas (online) da Escola Técnica Estadual de Ibaté](https://portalgeead.cps.sp.gov.br/cursos-tecnicos-online/).** Organizado por semestres, é escrito em código aberto nas linguagens abordadas durante o curso, para **compartilhar** materiais e conteúdos relacionados às disciplinas da grade curricular.
 
 ## O que é Este Repositório?
 
-Repositórios com **materiais** contidos em cada um dos três **semestre** do curso: ETEC - Desenvolvimento de Sistemas (DS).
+Repositórios com **materiais** contidos em cada um dos três **semestres** do curso: ETEC - Desenvolvimento de Sistemas (DS).
 
 Principais materiais publicados:
 - **Slides**
@@ -43,11 +43,14 @@ Os materiais e conteúdos são **divididos por semestres (módulos).** Clique no
 - 📄 [Plano do Curso]
 - 📄 [Regras para o TCC]
 
----
-
 ## Ferramentas e Tecnologias Abordadas:
-- **Linguagens**: HTML, CSS, Javascript
-- **Banco de Dados**: MySQL
+- **Linguagens**:
+   - [![HTML](https://img.shields.io/badge/-HTML-orange?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS](https://img.shields.io/badge/-CSS-blue?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- **Banco de Dados:**
+   - [![MySQL](https://img.shields.io/badge/-MySQL-blue?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
+- **Ferramentas:**
+   - [![VSCode](https://img.shields.io/badge/-VSCode-blue?style=flat&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
+
 
 ## Conexão:
 
