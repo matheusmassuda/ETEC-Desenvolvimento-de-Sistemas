@@ -15,4 +15,4 @@ Cursos completos no youtube de Cálculo 1 por **Professor Ferretto**, **USP**, *
 - Indeterminação nos limites.
 
 ## Objetivo
-Cálculo 1: desenvolver o **pensamento lógico**, **modelagem matemática** e **resolução de problemas complexos**. Conceitos como derivadas e integrais **aprimoram o raciocínio matemático** além de serem aplicados em IA, machine learning e computação gráfica, aprimorando a análise e estruturação de sistemas. Dominar essa disciplina é um diferencial competitivo em tecnologia.
+Cálculo 1: desenvolver o **pensamento lógico**, **modelagem matemática** e **resolução de problemas complexos** por meio da fragmentação em abstrações simples. Conceitos como derivadas e integrais **aprimoram o raciocínio matemático** além de serem aplicados em IA, machine learning e computação gráfica, aprimorando a análise e estruturação de sistemas. Dominar essa disciplina é um diferencial competitivo em tecnologia.
