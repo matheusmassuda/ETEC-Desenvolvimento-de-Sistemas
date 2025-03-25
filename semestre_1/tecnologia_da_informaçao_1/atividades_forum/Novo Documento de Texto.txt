@@ -1,2 +1,0 @@
-# Fórum - Respostas e Soluções
-Esta pasta contém minhas respostas e soluções para discussões em fóruns durante o curso. Cada arquivo PDF demonstra minha capacidade de analisar problemas, colaborar em equipe e propor soluções técnicas.
