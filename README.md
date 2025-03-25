@@ -20,26 +20,26 @@ Os materiais e conteúdos são **divididos por semestres (módulos).** Clique no
 <details>
   <summary><strong>📂 MÓDULO 1</strong> - [clique para ver mais 🔽] </summary>
   
-  #### 🗃️ [Comunicação](semestre-1/comunicação)
+  #### 🗃️ [Comunicação](semestre_1/comunicação)
   - [![atividades-forum](https://img.shields.io/badge/atividades-grey)](semestre-1/comunicação/atividades)
   - [![atividades-forum](https://img.shields.io/badge/atividades_fórum-grey)](semestre-1/comunicação/atividades-forum)
   - [![atividades-forum](https://img.shields.io/badge/materiais-grey)](semestre-1/comunicação/materiais)
   - [![atividades-forum](https://img.shields.io/badge/resumos-grey)](semestre-1/comunicação/resumos)
 
-  #### 🗃️ [Desenvolvimento de Sistemas I](semestre-1/desenvolvimento-de-sistemas-1)
+  #### 🗃️ [Desenvolvimento de Sistemas I](semestre_1/desenvolvimento_de_sistemas_1)
   - [![atividades-forum](https://img.shields.io/badge/atividades-grey)](semestre-1/desenvolvimento-de-sistemas-1/atividades)
   - [![atividades-forum](https://img.shields.io/badge/atividades_fórum-grey)](semestre-1/desenvolvimento-de-sistemas-1/atividades-forum)
   - [![atividades-forum](https://img.shields.io/badge/exercícios_java-grey)](semestre-1/desenvolvimento-de-sistemas-1/exercicios-java)
   - [![atividades-forum](https://img.shields.io/badge/materiais-grey)](semestre-1/desenvolvimento-de-sistemas-1/materiais)
   - [![atividades-forum](https://img.shields.io/badge/resumos-grey)](semestre-1/desenvolvimento-de-sistemas-1/resumos)
 
-  #### 🗃️ [Tecnologia da Informação I](semestre-1/tecnologia-da-informaçao-1)
+  #### 🗃️ [Tecnologia da Informação I](semestre_1/tecnologia_da_informaçao_1)
   - [![atividades-forum](https://img.shields.io/badge/atividades-grey)](semestre-1/tecnologia-da-informaçao-1/atividades)
   - [![atividades-forum](https://img.shields.io/badge/atividades_fórum-grey)](semestre-1/tecnologia-da-informaçao-1/atividades-forum)
   - [![atividades-forum](https://img.shields.io/badge/materiais-grey)](semestre-1/tecnologia-da-informaçao-1/materiais)
   - [![atividades-forum](https://img.shields.io/badge/resumos-grey)](semestre-1/tecnologia-da-informaçao-1/resumos)
 
-  #### 📚 [Cursos de Extensão](semestre-1/cursos-extensao)
+  #### 📚 [Cursos de Extensão](semestre_1/cursos_extensao)
   - [![atividades-forum](https://img.shields.io/badge/cálculo_1-grey)](semestre-1/cursos-extensao/calculo-1)
   - [![atividades-forum](https://img.shields.io/badge/java_básico-grey)](semestre-1/cursos-extensao/java-basico)
 </details>
