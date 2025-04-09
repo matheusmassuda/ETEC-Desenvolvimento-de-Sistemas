@@ -10,11 +10,15 @@ public class MatheusMassuda_Ag8_DS_1 {
     //Declaração (apenas ilustrativa para esse exercícios) da variável do tipo String (cadeia de caracteres);
 
     for (i=1; i<=50; i++) {
-    //Inicialização da estrutura de repetição do tipo for com variável de controle inicial com valor 1 (i=1), limite da variável de controle definida como 50 (i<=50) e incremento "soma" de apenas uma unidade (i++);
+    /*
+    Inicialização da estrutura de repetição do tipo for com variável de controle inicial com valor 1 (i=1), 
+    limite da variável de controle definida como 50 (i<=50) e incremento "soma" de apenas uma unidade (i++);
+    */
         nomeEntrevistado = JOptionPane.showInputDialog("[Bem-vindo a TudoWeb] - Digite seu nome: ");
         //Captura/Leitura para variável nomeEntrevistado via interface gráfica do JOptionPane (já captura no tipo String);
         idadeEntrevistado = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade: "));
-        //Captura/Leitura e conversão para variável idadeEntrevistado via interface gráfica do JOptionPane (captuira em String e é convertido em Inteiro) essa variável é ilustrativa para essa atividade;
+        /*Captura/Leitura e conversão para variável idadeEntrevistado via interface gráfica do JOptionPane 
+        (captuira em String e é convertido em Inteiro) essa variável é ilustrativa para essa atividade;*/
         opiniaoEscolhida = Integer.parseInt(JOptionPane.showInputDialog("Digite o número referente à opinião do atendimento prestado: "
         + "\n 1 - EXCELENTE "
         + "\n 2 - BOM "
