@@ -1,0 +1,28 @@
+<!--
+Atributo data-: permite salvar dados relativos aos elementos de html
+é possível vizualisar esses dados com o modo "dev tools" do inspecionar elemento no campo console via JS.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute Data</title>
+</head>
+<body>
+    
+    <ul>
+        <li data-id="1" data-email="mat.massuda@gmail.com" data>Matheus Massuda</li>
+        <li data-id="2" data-email="antonio.123@gmail.com" data>Antonio</li>
+    </ul>
+
+    <script>
+        document.querySelectorAll('li').forEach(liEl => {
+            console.log(liEl.dataset.email)
+        })
+    </script>
+
+</body>
+</html>
