@@ -1,0 +1,64 @@
+<!--
+Atributo dropzone: torna um elemento como área onde se pode soltar um elemento arrastado.
+
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .caixa {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    .drop {
+        margin: auto;
+        width: 350px;
+        height: 350px;
+        border: rgb(133, 221, 1) 4px solid;
+        background-color: rgba(172, 255, 47, 0.5);
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+
+    <div id="c1" class="caixa" draggable="true">Arraste-me para o quadrado verde</div>
+    <div id="c2" class="caixa" draggable="true">Arraste-me para o quadrado verde</div>
+
+    <div class="drop" dropzone="copy">Solte aqui dentro</div>
+
+    <script>
+        const caixas = document.querySelectorAll('.caixa')
+        const dropZone = document.querySelector('[dropzone]');
+
+        caixas.forEach(caixaEl => {
+            caixaEl.addEventListener('dragstart', e=> {
+                e.dataTransfer.setData('Text', e.target.id);
+                console.log(e.target.id);
+            });
+        });
+
+        dropZone.addEventListener('dragover', e => {
+            e.preventDefault();
+        });
+
+        dropZone.addEventListener('drop', e=> {
+            const id = e.dataTransfer.getData('Text');
+
+            const element = document.getElementById(id);
+
+            e.target.appendChild(element);
+        })
+    </script>
+    
+
+</body>
+</html>
