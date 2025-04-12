@@ -1,0 +1,27 @@
+<!--
+Event error: dispara quando ocorre algum tipo de error.
+
+No caso a baixo forçaremos o erro para o a página carregar uma iamgem com um nome que não existe
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: error</title>
+</head>
+<body>
+
+    <img src="images/asdfkjhasdkhjf.gif" alt="image" onerror="debug(event)">
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            alert('Evento: ' +e.type);
+        }
+    </script>
+    
+</body>
+</html>

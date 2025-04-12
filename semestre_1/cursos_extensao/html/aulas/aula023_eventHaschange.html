@@ -1,0 +1,23 @@
+<!--
+Event hashchange: dispara toda vez que um hash é alterado, hash é o "#" que existe na URL do site.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: onhashchange</title>
+</head>
+<body onhashchange="debug(event)">
+    
+    <script>
+        function debug(e) {
+            console.log('Evento: ' +e.type);
+            alert('Evento: '+e.type);
+        }
+    </script>
+
+</body>
+</html>

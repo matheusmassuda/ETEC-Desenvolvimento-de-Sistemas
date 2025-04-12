@@ -1,0 +1,24 @@
+<!--
+event beforeunload: diaparado antes de uma página ser descarregada
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event onbeforeunload</title>
+</head>
+<body onbeforeunload="return debug(event)">
+    <h1>Event breforeunload</h1>
+    <p>Exibido antes mesmo da página carregar</p>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: antes de carregar' + e.type);
+            return 'Evento: antes de carregar ' + e.type;
+        }
+    </script>
+</body>
+</html>
