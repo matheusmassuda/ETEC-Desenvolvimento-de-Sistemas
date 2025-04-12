@@ -1,0 +1,26 @@
+<!--
+beforeprint/afterprint: são eventos que acontecem imadiatamente antes da impressão ou depois de mandar imprimir ou cancelar a impressão.
+
+Eles podem ser acionados via JScom uma function
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: afterprint e beforeprint</title>
+</head>
+<body onbeforeprint="debug(event)" onafterprint="debug(event)">
+    <h1>Olá mundo</h1>
+
+    <script>
+        function debug(e) {
+            alert('Evento: impressão ' + e.type)
+        }
+    </script>
+
+
+</body>
+</html>
