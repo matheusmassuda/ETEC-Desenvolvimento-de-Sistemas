@@ -1,0 +1,25 @@
+<!--
+Evento keydown: (evento de teclado) esse evento acontece toda vez que uma tecla DESCE, ou seja, quaando qualquer tecla descer (para o elemento em questão) ele contabilizará uma unidade.
+
+Se um usuário digitar o a palavra: "Matheus" ele será contabilziado 7 vezes.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Keydown</title>
+</head>
+<body>
+    <input type="text" onkeydown="debug(event)">
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+e.type);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--
+Event submit: é um evento que é disparado no momento imediato em que o botão submit (enviar) é clicado.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event submit</title>
+</head>
+<body>
+
+    <form action="" onsubmit="debug(event)">
+        <input type="text">
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <script>
+        function debug(e) {
+            console.log('Evento: ' +e.type);
+        }
+    </script>
+</body>
+</html>

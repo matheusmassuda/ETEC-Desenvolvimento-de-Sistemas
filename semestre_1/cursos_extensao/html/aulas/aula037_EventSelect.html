@@ -1,0 +1,22 @@
+<!--
+Event Select: dispara toda vez que um elemento é selecionado com o ponteiro do mouse.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Select</title>
+</head>
+<body>
+    <input type="search" onselect="debug(event)">
+    
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+e.type);
+        }
+    </script>
+</body>
+</html>

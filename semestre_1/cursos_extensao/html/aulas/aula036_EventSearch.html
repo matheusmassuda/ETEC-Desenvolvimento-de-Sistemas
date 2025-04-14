@@ -1,0 +1,22 @@
+<!--
+Event Serach: é ativado todas as vezes que você escreve em um campo de busca e clica a tecla enter ou em um botão "enviar" (submit).
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Search</title>
+</head>
+<body>
+    
+    <input type="search" onsearch="debug(event)">
+    <button type="submit">Clique para Enviar</button>
+    <script>
+        function debug(e) {
+            console.log('Evento: ' +e.type);        }
+    </script>
+</body>
+</html>

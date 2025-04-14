@@ -1,0 +1,27 @@
+<!--
+Event Keypress: dispara toda vez que uma tecla é rpessionada, mas resta a dúvida: 
+1) Qual evento ocorre primeiro? Keypress ou Keydown?
+
+1° Você abaixa a tecla e só depois é contabilizado a tecla pressionada
+Keydown > Keypress
+
+Se o usuário clicar e segurar os dois eventos serão contabilizados infinitamente
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Keypress</title>
+</head>
+<body>
+    <input type="text" onkeypress="debug(event)" onkeydown="debug(event)">
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+e.type);
+        }
+    </script>
+</body>
+</html>
