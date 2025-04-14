@@ -1,0 +1,22 @@
+<!--
+Event resize: dispara toda vez que a janela do navegador sofre alteração de tamanho (minimizar, maximixar) ou ajustado manualmente com o mouse.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event resize</title>
+</head>
+<body onresize="debug(event)">
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+ e.type);
+        }
+    </script>
+    
+</body>
+</html>

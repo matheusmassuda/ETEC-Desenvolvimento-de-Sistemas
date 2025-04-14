@@ -1,0 +1,23 @@
+<!--
+Event online / offline: é disparado quando há alteração de banda de internet na janela do navegador (online) para conexão ativa e (offline) para conexão desativada.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Online e Offline</title>
+</head>
+<body ononline="debug(event)" onoffline="debug(event)">
+    <h1>Event Online and Offline</h1>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            alert('Evento: ' + e.type)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!--
+Event pageshow: é disparado quando a página é completamente carregada e exibida para o usuário. É muito parecido com o evento load, mas o load acontece primeiro.
+
+Primeiro a página é carregada (load) e depois a página é esibida (pageshow)
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Pageshow</title>
+</head>
+<body onpageshow="debug(event)" onload="debug(event)">
+    
+    <script>
+        function debug(e) {
+            console.log('Evento: ' +e.type);
+            alert('Evento: ' + e.type);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!--
+Event blur: dispara quando perde o foco de um elemento (no caso a página) quando estou numa página e troco de página perdendo o foco da página inicial o evento é disparado.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Blur</title>
+</head>
+<body onblur="debug(event)">
+    
+
+    <script>
+        function debug(e) {
+            console.log('Event: ' +e.type);
+        }
+    </script>
+</body>
+</html>

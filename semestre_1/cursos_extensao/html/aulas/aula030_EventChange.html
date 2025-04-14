@@ -1,0 +1,23 @@
+<!--
+Event change: é um evento de formulário. Acontece toda vez que um formulário é alterado. Ele considera uma alteração toda vez que se perde o foco do elemento do formulário (tab ou enter).
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event change</title>
+</head>
+<body>
+    
+    <input type="text" onblur="debug(event)" onchange="debug(event)">
+
+    <script>
+        function debug(e) {
+            console.log('Event: ' +e.type);
+        }
+    </script>
+</body>
+</html>
