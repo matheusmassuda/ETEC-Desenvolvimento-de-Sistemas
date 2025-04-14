@@ -1,0 +1,22 @@
+<!--
+Event focus: Aconece quando um elemento é focado, ou seja, é o contrário do evento blur (perder o foco).
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Focus</title>
+</head>
+<body>
+    
+    <input type="text" onfocus="debug(event)">
+    <script>
+        function debug(e) {
+            console.log('Evento: ' +e.type);
+        }
+    </script>
+</body>
+</html>

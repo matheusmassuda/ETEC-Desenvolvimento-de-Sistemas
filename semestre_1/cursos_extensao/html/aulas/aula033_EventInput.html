@@ -1,0 +1,27 @@
+<!--
+Event input: dispara todas vez que existe entrada de dados dentro de um campo (input).
+
+Cada tecla apertado ao digitar em um capo input dispara uma unidade de evento.
+
+Quando é colado algo da área de transferência é contabilizado (disparado) uma unidade de evento.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Input</title>
+</head>
+<body>
+    
+    <input type="text" oninput="debug(event)">
+
+    <script>
+        function debug(e) {
+                console.log('Evento: ' +e.type);
+        }
+    </script>
+</body>
+</html>

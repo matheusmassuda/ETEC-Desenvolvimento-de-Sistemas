@@ -1,0 +1,27 @@
+<!--
+Event reset: Dispara toda vez que um botão do tipo reset (limpar) é acionado dentro de um formulário
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Reset</title>
+</head>
+<body>
+
+    <form action="" onreset="debug(event)">
+        <input type="email">
+        <button type="reset">Limpar</button>
+    </form>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+    
+</body>
+</html>

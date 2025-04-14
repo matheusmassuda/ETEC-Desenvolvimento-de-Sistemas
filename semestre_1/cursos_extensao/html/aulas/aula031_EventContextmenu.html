@@ -1,0 +1,25 @@
+<!--
+Event contextmenu: acontece quando é aberto o menu de contexto, por exemplo, botão direito na barra de tarefas.
+
+No caso a baixo quando se clica no campo input com o botão direito.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event contextmenu</title>
+</head>
+<body>
+
+    <input type="text" oncontextmenu="debug(event)">
+    <script>
+        function debug(e) {
+            console.log('Evento: ' +e.type);
+        }
+    </script>
+    
+</body>
+</html>
