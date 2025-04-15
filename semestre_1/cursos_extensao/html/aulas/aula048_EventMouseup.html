@@ -1,0 +1,29 @@
+<!--
+Event mouseup: dispara quando o clique do mouse é solto, ou seja, quando ele sobre.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50vw;
+            height: 50vw;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div onmousemove="debug(event)" onmouseout="debug(event)" onmouseover="debug(event)" onmouseup="debug(event)">Mova o mouse dentro de mim</div>
+
+    <script>
+        function debug(e) {
+            e.stopPropagation();
+            console.log('Evento: '+e.type);
+        }
+    </script>
+</body>
+</html>

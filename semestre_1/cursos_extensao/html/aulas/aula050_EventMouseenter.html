@@ -1,0 +1,32 @@
+<!--
+Event mouseenter: diaparado quando o mouse entra em um determinado elemento.
+
+Entre mouseenter e mouseover o mouseover acontece primeiro.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Mouseenter</title>
+    <style>
+        div {
+            width: 50vw;
+            height: 50vw;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div onmouseenter="debug(event)" onmouseout="debug(event)" onmousemove="debug(event)">Mova o mouse dentro de mim</div>
+
+    <script>
+        function debug(e) {
+            e.stopPropagation();
+            console.log('Evento: '+e.type);
+        }
+    </script>
+</body>
+</html>
