@@ -1,0 +1,26 @@
+<!--
+Event mousedown: acionado toda vez que o botão do mouse vai para baixo.
+
+Tatnto para eventos de teclado (keydown e keypress) quanto para eventos de mouse (mousedown e click) o "down" sempre acontece primeiro pois é necessário a tecla abaixar completamente para depois contabilizar o press ou o click.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event mousedown</title>
+</head>
+<body>
+
+    <button onclick="debug(event)" onmousedown="debug(event)">Teste de mousedown</button>
+
+    <script>
+        function debug(e) {
+            e.stopPropagation();
+            console.log('Evento: '+e.type);
+        }
+    </script>
+</body>
+</html>

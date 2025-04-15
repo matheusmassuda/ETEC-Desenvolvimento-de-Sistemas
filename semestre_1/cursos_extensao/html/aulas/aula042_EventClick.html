@@ -1,0 +1,24 @@
+<!--
+Event click: acionado toda vez que um elemento escolhido recebe um clique do mouse.
+
+Obs: se houver 2 elementos com z-index (camadas) diferentes o elemento que receberá o click é o de cima, portanto o elemento de trás não receb receberá click.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event click</title>
+</head>
+<body id="body" onclick="debug(event)" style="height: 100%;">
+    <button onclick="debug(event)">Botãao testar click</button>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: '+e.type);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!--
+Event dblclick: acionado toda vez que ocorrer um double click (duplo clique) dois clickes rápidos sem demorar.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dblclick</title>
+</head>
+<body>
+    
+    <button ondblclick="debug(event)">Botãao testar dbclick</button>
+
+    <script>
+        function debug(e) {
+            e.stopPropagation();
+            console.log('Evento: '+e.type);
+        }
+    </script>
+</body>
+</html>
