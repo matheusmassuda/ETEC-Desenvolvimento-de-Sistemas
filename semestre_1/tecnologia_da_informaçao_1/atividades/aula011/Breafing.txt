@@ -1,0 +1,16 @@
+Boa tarde, professor.
+
+Conforme sua orientação, eu não coloquei os "includs" e "extends" em ações
+que não seriam exclusivas do sistema.
+
+Além disso coloquei os agentes principais no lado esquerdo da aplicação
+e o agende secundário do lado direito (fora do retângulo).
+
+Mais uma vez, ressalto que foi interessante fazer essa atividade para entender
+na prática um pouco mais como funcionam os requisitos funcionais
+e como é a representação gráfica (diagrama) na prática.
+
+Com certeza esse diagrama ajudaria na execução do código.
+
+Espero ter seguido todas as orientações corretamente!
+
