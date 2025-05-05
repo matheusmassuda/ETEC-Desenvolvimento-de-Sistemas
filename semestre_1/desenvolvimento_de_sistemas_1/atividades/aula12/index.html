@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meus sites favoritos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e0edff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #1d1d1d;
+      margin-bottom: 30px;
+    }
+
+    #Header-1 {
+        color: #000f1d;
+    }
+
+    .page-name {
+      font-size: 22px;
+      margin: 4px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+      gap: 16px; /* espaço entre os itens */
+    }
+
+    .item {
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #cccccc96;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    a {
+      margin-top: 8px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #005299;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #ffffff;  
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      color: black;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="Header-1">Meus sites favoritos: Matheus Luiz Massuda</h1>
+
+    <div class="grid">
+      <div class="item">
+        <h1 class="page-name">World of Warcraft</h2>
+        <img src="images/World_Of_Warcraft.jpg" alt="World of Warcraft Page">
+        <a href="https://worldofwarcraft.blizzard.com/pt-br/" target="_blank">Acesse: World of Warcraft</a>
+      </div>
+      <div class="item">
+        <h1 class="page-name">Archon</h2>
+        <img src="images/Archon.jpg" alt="Archon Page">
+        <a href="https://www.archon.gg/wow" target="_blank">Acesse: Archon</a>
+      </div>
+      <div class="item">
+        <h1 class="page-name">WoW Token Price</h2>
+        <img src="images/Wow_TokenPrice.jpg" alt="WoW Token Price Page">
+        <a href="https://classic.wowtoken.app/" target="_blank">Acesse: WoW Price Token</a>
+      </div>
+      <div class="item">
+        <h1 class="page-name">Instagram - Skilu</h2>
+        <img src="images/Instagram.jpg" alt="Instagram Skilu Page">
+        <a href="https://www.instagram.com/skilu_nozes/" target="_blank">Acesse: Instagram Skilu</a>
+      </div>
+      <div class="item">
+        <h1 class="page-name">Twitch - Skilu</h2>
+        <img src="images/Twitch.jpg" alt="Twitch Skilu Page">
+        <a href="https://www.twitch.tv/skilu" target="_blank">Acesse: Twitch Skilu</a>
+      </div>
+      <div class="item">
+        <h1 class="page-name">Youtube - Skilu</h2>
+        <img src="images/Youtube.jpg" alt="Youtube Skilu Page">
+        <a href="https://www.youtube.com/@SkiluNozes/videos" target="_blank">Acesse: Youtube Skilu</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Matheus Luiz Massuda</p>
+  </footer>
+</body>
+</html>
+
