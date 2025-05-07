@@ -1,0 +1,175 @@
+<!--Tag de abertuda de documento (tipo HTML)-->
+<!DOCTYPE html>
+<!-- Documento html "setado" para linguagem em pt-br (navegador identificará e 
+traduzirá apra outras linguagens mais facilmente)-->
+<html lang="pt-BR">
+<!--tag de cabeçalho com metadados-->
+<head>
+  <!--definição de padrão de caracteres UTF-8 (aceita acentuações)-->
+  <meta charset="UTF-8" />
+  <!-- define a visualização da página e coloca zoom do browzer em 1.0 (normal)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--Define o título que aparecerá na aba do navegador (é possível colocar ícones também)-->
+  <title>Meus sites favoritos</title>
+  <!--Criação de estilos (geralmente é criado em outro documento do tipo ".css", mas 
+  coloquei aqui para agilizar)-->
+  <style>
+    /*estilização do corpo da página (geral) zerei margens e preenchimentos
+    cor de fundo geral definida e família de fontes Arial*/
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fbfdff;
+      font-family: Arial, sans-serif;
+    }
+
+    /*Estilização da classe ".container": definição de largura máxima, ocupação máxima
+    alinhamento do texto no centro, preenchimento de 20px e margem zerada*/
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    /*Estilização de título (h1) cor do texto e margem inferior*/
+    h1 {
+      color: #1d1d1d;
+      margin-bottom: 30px;
+    }
+
+    /*Estilização de id*/
+    #Header-1 {
+        color: #000f1d;
+    }
+
+    /*Estilização de calsse: tamanho de fonte e margim (cima e baixo em 4px) (direita e esquerda em 0px)*/
+    .page-name {
+      font-size: 22px;
+      margin: 4px 0;
+    }
+
+    /*Definição de grid layout: tipo de exibição (grid), definição de colunas e espaçamento em 16px*/
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+      gap: 16px; /* espaço entre os itens */
+    }
+
+    /*Estilização da classe ".item":cor de fundo, preenchimento, arredondamento de borda em 6px
+    borda fininha, sombreamento, tipo de exibição e direção (criar a percepção de card na tela)*/
+    .item {
+      background-color: #fbfdff;
+      padding: 8px;
+      border-radius: 6px;
+      border: 0.8px solid rgba(231, 231, 231, 0.48);
+      box-shadow: 0 0 5px rgba(0,0,0,0.02);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /*Estilização tag img: largura máxima, altura automática e arredondamento de borda*/
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    /*Estilização da tag a: margem superior e inferior, decoração de texto (nenhuma), cor e peso da fonte*/
+    a {
+      margin-top: 8px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    /*Estilização de repouso do mouse por cima do link: muda de cor e aparece sublinhado para dar percepção
+    de link*/
+    a:hover {
+      color: #005299;
+      text-decoration: underline;
+    }
+
+    /*Estilização rodapé: cor de fundo, sombreamento, cor e alinhamento do texto, preenchimento e margim superior*/
+    footer {
+      background-color: #ffffff;  
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      color: black;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Tag div (sem valor semântico) para agrupamento (container máximo) de outras tags-->
+  <div class="container">
+    <!--Definição de título principal (tag extremamente semântica)-->
+    <h1 id="Header-1">Meus sites favoritos: Matheus Luiz Massuda</h1>
+
+    <!--Tag div para criação de grid layout e posicionamento de elementos-->
+    <div class="grid">
+      <!--Tag div para criação de cada item em separado-->
+      <div class="item">
+        <!--Tag semântica de título principal com nome do site favorito 1-->
+        <h1 class="page-name">World of Warcraft</h2>
+        <!--Imagem do site 1 com link embutido e abertura em outra guia "_blank"--> 
+        <a href="https://worldofwarcraft.blizzard.com/pt-br/" target="_blank"><img src="images/World_Of_Warcraft.jpg" alt="World of Warcraft Page"></a>
+        <!--Texto com link site 1-->
+        <a href="https://worldofwarcraft.blizzard.com/pt-br/" target="_blank">Acesse: World of Warcraft</a>
+      </div>
+      <div class="item">
+        <!--Tag semântica de título principal com nome do site favorito 2-->
+        <h1 class="page-name">Archon</h2>
+        <!--Imagem do site 2 com link embutido e abertura em outra guia "_blank"--> 
+        <a href="https://www.archon.gg/wow" target="_blank"><img src="images/Archon.jpg" alt="Archon Page"></a>
+        <!--Texto com link site 2-->
+        <a href="https://www.archon.gg/wow" target="_blank">Acesse: Archon</a>
+      </div>
+      <div class="item">
+        <!--Tag semântica de título principal com nome do site favorito 3-->
+        <h1 class="page-name">WoW Token Price</h2>
+        <!--Imagem do site 3 com link embutido e abertura em outra guia "_blank"--> 
+        <a href="https://classic.wowtoken.app/" target="_blank"><img src="images/Wow_TokenPrice.jpg" alt="WoW Token Price Page"></a>
+        <!--Texto com link site 3-->
+        <a href="https://classic.wowtoken.app/" target="_blank">Acesse: WoW Price Token</a>
+      </div>
+      <div class="item">
+        <!--Tag semântica de título principal com nome do site favorito 4-->
+        <h1 class="page-name">Instagram - Skilu</h2>
+        <!--Imagem do site 4 com link embutido e abertura em outra guia "_blank"--> 
+        <a href="https://www.instagram.com/skilu_nozes/" target="_blank"><img src="images/Instagram.jpg" alt="Instagram Skilu Page"></a>
+        <!--Texto com link site 4-->
+        <a href="https://www.instagram.com/skilu_nozes/" target="_blank">Acesse: Instagram Skilu</a>
+      </div>
+      <div class="item">
+        <!--Tag semântica de título principal com nome do site favorito 5-->
+        <h1 class="page-name">Twitch - Skilu</h2>
+        <!--Imagem do site 5 com link embutido e abertura em outra guia "_blank"--> 
+        <a href="https://www.twitch.tv/skilu" target="_blank"><img src="images/Twitch.jpg" alt="Twitch Skilu Page"></a>
+        <!--Texto com link site 5-->
+        <a href="https://www.twitch.tv/skilu" target="_blank">Acesse: Twitch Skilu</a>
+      </div>
+      <div class="item">
+        <!--Tag semântica de título principal com nome do site favorito 6-->
+        <h1 class="page-name">Youtube - Skilu</h2>
+         <!--Imagem do site 6 com link embutido e abertura em outra guia "_blank"--> 
+        <a href="https://www.youtube.com/@SkiluNozes/videos" target="_blank"><img src="images/Youtube.jpg" alt="Youtube Skilu Page"></a>
+        <!--Texto com link site 6-->
+        <a href="https://www.youtube.com/@SkiluNozes/videos" target="_blank">Acesse: Youtube Skilu</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Tag semântica footer (rodapé) com informaçõs sobre o criador-->
+  <footer>
+    <p>© 2025 Matheus Luiz Massuda</p>
+  </footer>
+</body>
+</html>
+
