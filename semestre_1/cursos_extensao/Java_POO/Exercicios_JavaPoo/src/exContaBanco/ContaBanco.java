@@ -8,13 +8,72 @@ public class ContaBanco {
     private float saldoConta;
     private boolean statusConta;
 
+
+    //Métodos
+    public abrirConta(t: String) {
+        setTipoConta(t);
+        setStatusConta(true);
+
+        if (t = "CC") {
+            saldoConta = 50;
+        } else if (t = "CP") {
+            saldoConta = 150;
+        } 
+    }
+
+    public fecharConta() {
+        if (saldoConta > 0) {
+            System.out.println("Conta com dinheiro");
+        } else if (saldoConta < 0) {
+            System.out.println("Conta em débito");
+        } else {
+            setStatusConta(false);
+        }
+    }
+
+    public depositar(v: float) {
+        if (statusConta = true) {
+            // linha de baixo é equivalente a: saldoConta += v;
+            setSaldoConta(getSaldoConta() + v);
+        } else {
+            System.out.println("Conta está fechada");
+        }
+    }
+
+    public sacar(v: float) {
+        if (getStatusConta() = true) {
+            if (saldoConta > v) {
+                setSaldoConta(getSaldoConta() - v);
+            }
+        } else {
+            System.out.println("Impossível sacar");
+        }
+    }
+
+    public pagarMensal() {
+        float v;
+        if (tipoConta = "CC") {
+            v = 12;
+        } else if (tipoConta ="CP") {
+            v = 20;
+        }
+
+        if (statusConta = true) {
+            if (saldoConta > v) {
+                setSaldoConta(getSaldoConta() - v)
+            } else {
+                System.out.println("Saldo insulficiente");
+            }
+        }
+    }
+
     //Métodos Especiais (Constructor);
     public ContaBanco() {
         saldoConta = 0;
-        status = false;
+        statusConta = false;
     }
 
-    public setNumConta(n: float) {
+    public setNumConta(n: int) {
         numConta = n;
     }
 
@@ -53,6 +112,4 @@ public class ContaBanco {
     public getStatusConta() {
         return statusConta;
     }
-
-
 }
