@@ -1,0 +1,9 @@
+Bom dia professora!
+
+Fui muito legal desenvolver essa atividade!
+
+Gosto muito de treinar HTML e CSS, especialmente as questões de posicionamento que são meus maiores desafios (CSS, flex-box, row, column, padding, display, flex-direction, entre outros).
+
+Segue a atvidade da Agenda 13, espero ter seguido todas as instruções corretamente.
+
+Decidi fazer em linha, pois em meu raciocínio faria mais sentido, além disso, para simular um aspecto visual de uma LP coloquei uma imagem de background onde entrariam, no futuro, links e botões para menus.
