@@ -1,117 +1,177 @@
+<!--Abertura e declaração do tipo de documento-->
 <!DOCTYPE html>
+<!--Definição da lingua usada no código (acessibilidade e SEO)-->
 <html lang="pt-BR">
 <head>
+    <!--Padrão de caracteres usados no código-->
     <meta charset="UTF-8">
+    <!--padronização de metadados do documento-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link do framework estudado nesta agenda (w3.css)-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Título que aparece na aba do navegador-->
     <title>Atrativos Turísticos - São Carlos</title>
+    <!--definição de estilos no próprio documento HTML (prática evitável)-->
     <style>
+        /*Definição de padrão para o tamanho dos card*/
         .imagem-fixa {
         width: 100%;
         height: 80%; 
         object-fit: cover; 
         display: block;
         }
+        /*Tirei estilo de decoração do link tradicional*/
+        .text-link-decoration {
+            text-decoration: none;
+        }
+        /*quando mouse estiver hover aparece uma linha sublinhada que remete a um link*/
+        .text-link-decoration:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
+<!--classe w3 para padronizar e centralizar todo o conteúdo do documento-->
 <body class="w3-center">
-    
+    <!--Escolha de layout no estilo linha, acrescentei margem superior (top) e inferior (bottom) que irão refletir nas secções e cards-->
     <div class="w3-row-padding w3-margin-top w3-margin-bottom">
 
     <!-- Linha 1 -->
     <div class="w3-row">
+        <!--Definição de 3 linhas com duas colunas para melhor vizualização. Aqui tive ajuda do CHAT GPT para encotnrar
+        essa propriedade ""w3-col s12 m6 w3-padding"" e garantir esse layout desejado-->
         <div class="w3-col s12 m6 w3-padding">
+            <!--Definição do container superior subtítulo h2 e cor de fundo-->
             <div class="w3-container" style="background-color: rgb(97, 103, 175); color:white;">
                 <h2>Ciência</h2>
             </div>
+            <!--Definição do card via framewrok e delimitação da área onde aparecerá o conteúdo-->
             <div class="w3-card">
-                <h3>Observatório Astronômico da USP</h2>
+                <h3><a class="text-link-decoration w3-hover-text-purple" href="https://www.tripadvisor.com.br/Attraction_Review-g303627-d8508985-Reviews-Observatorio_Astronomico_da_USP_Dietrich_Schiel-Sao_Carlos_State_of_Sao_Paulo.html" target="_blank">Observatório Astronômico da USP</a></h2>
+                <!--Definição de efeito padrão (com opacidade ligada) e efeito mouse em cima (hover) desliga a opacidade-->                                      
                 <img src="images/Observatorio_USP.jpg" style="width: 100%;" class="w3-opacity w3-hover-opacity-off">
+                <!--Definição do container via framework da parte branca onde estará a descrição-->
                 <div class="w3-container">
-                    <h4>Evolução da Vida</h3>
+                    <h4>Descrição</h4>
+                    <p>Atrações: observação com telescópios, palestras, exposições e atividades interativas sobre o cosmos.</p>
                 </div>
             </div>
         </div>
-
+        <!--Definição de 3 linhas com duas colunas para melhor vizualização. Aqui tive ajuda do CHAT GPT para encotnrar
+        essa propriedade ""w3-col s12 m6 w3-padding"" e garantir esse layout desejado-->
         <div class="w3-col s12 m6 w3-padding">
+            <!--Definição do container superior subtítulo h2 e cor de fundo-->
             <div class="w3-container" style="background-color: rgb(97, 103, 175); color:white;">
                 <h2>Museus e Ciência</h2>
             </div>
+            <!--Definição do card via framewrok e delimitação da área onde aparecerá o conteúdo-->
             <div class="w3-card">
-                <h3>Museu da Ciência de São Carlos</h2>
+                <h3><a class="text-link-decoration w3-hover-text-purple" href="https://www.tripadvisor.com.br/Attraction_Review-g303627-d6586291-Reviews-Museu_Da_Ciencia_De_Sao_Carlos_Prof_Mario_Tolentino-Sao_Carlos_State_of_Sao_Paulo.html" target="_blank">Museu da Ciência de São Carlos</a></h2>
+                <!--Definição de efeito padrão (com opacidade ligada) e efeito mouse em cima (hover) desliga a opacidade-->
                 <img src="images/Museu_da_Ciencia.jpg" style="width: 100%;" class="w3-opacity w3-hover-opacity-off">
+                <!--Definição do container via framework da parte branca onde estará a descrição-->
                 <div class="w3-container">
-                    <h4>Fóssil de Dinossauro</h3>
+                    <h4>Descrição</h4>
+                    <p>Atrações: exposições interativas, oficinas, experiências científicas e atividades lúdicas para todas as idades.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Linha 2 -->
+    <!--Definição de 3 linhas com duas colunas para melhor vizualização. Aqui tive ajuda do CHAT GPT para encotnrar
+        essa propriedade ""w3-col s12 m6 w3-padding"" e garantir esse layout desejado-->
     <div class="w3-row w3-margin-top">
+        <!--Definição de 3 linhas com duas colunas para melhor vizualização. Aqui tive ajuda do CHAT GPT para encotnrar
+        essa propriedade ""w3-col s12 m6 w3-padding"" e garantir esse layout desejado-->
         <div class="w3-col s12 m6 w3-padding">
+            <!--Definição do container superior subtítulo h2 e cor de fundo-->
             <div class="w3-container" style="background-color: rgb(97, 103, 175); color:white;">
                 <h2>Natureza</h2>
             </div>
+            <!--Definição do card via framewrok e delimitação da área onde aparecerá o conteúdo-->
             <div class="w3-card">
-                <h3>Parque Ecológico de São Carlos</h2>
+                <h3><a class="text-link-decoration w3-hover-text-purple" href="https://www.tripadvisor.com.br/Attraction_Review-g303627-d3656215-Reviews-Parque_Ecologico_de_Sao_Carlos-Sao_Carlos_State_of_Sao_Paulo.html" target="_blank">Parque Ecológico de São Carlos</a></h2>
+                <!--Definição de efeito padrão (com opacidade ligada) e efeito mouse em cima (hover) desliga a opacidade-->
                 <img src="images/Parque_Ecologico.jpg" style="width: 100%;" class="w3-opacity w3-hover-opacity-off">
+                <!--Definição do container via framework da parte branca onde estará a descrição-->
                 <div class="w3-container">
-                    <h4>Filhotes de urso no Parque</h3>
+                    <h4>Descrição</h4>
+                    <p>Atrações: trilhas, lago, áreas de piquenique, playground e diversos animais em um ambiente de natureza preservada.</p>
                 </div>
             </div>
         </div>
-
+        <!--Definição de 3 linhas com duas colunas para melhor vizualização. Aqui tive ajuda do CHAT GPT para encotnrar
+        essa propriedade ""w3-col s12 m6 w3-padding"" e garantir esse layout desejado-->
         <div class="w3-col s12 m6 w3-padding">
+            <!--Definição do container superior subtítulo h2 e cor de fundo-->
             <div class="w3-container" style="background-color: rgb(97, 103, 175); color:white;">
                 <h2>História</h2>
             </div>
+    <!--Definição do card via framewrok e delimitação da área onde aparecerá o conteúdo-->           
             <div class="w3-card">
-                <h3>Museu de São Carlos</h2>
+                <h3><a class="text-link-decoration w3-hover-text-purple" href="https://www.tripadvisor.com.br/Attraction_Review-g303627-d4377382-Reviews-Museu_de_Sao_Carlos-Sao_Carlos_State_of_Sao_Paulo.html" target="_blank">Museu de São Carlos</a></h2>
+                <!--Definição de efeito padrão (com opacidade ligada) e efeito mouse em cima (hover) desliga a opacidade-->
                 <img src="images/Museu_SC.jpg" style="width: 100%;" class="w3-opacity w3-hover-opacity-off">
+                <!--Definição do container via framework da parte branca onde estará a descrição-->
                 <div class="w3-container">
-                    <h4>Entrada do Museu</h3>
+                    <h4>Descrição</h4>
+                    <p>Atrações: exposições históricas, artefatos regionais, acervo cultural e atividades educativas sobre a história de São Carlos.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Linha 3 -->
+    <!--Definição de 3 linhas com duas colunas para melhor vizualização. Aqui tive ajuda do CHAT GPT para encotnrar
+        essa propriedade ""w3-col s12 m6 w3-padding"" e garantir esse layout desejado-->
     <div class="w3-row w3-margin-top">
+        <!--Definição de 3 linhas com duas colunas para melhor vizualização. Aqui tive ajuda do CHAT GPT para encotnrar
+        essa propriedade ""w3-col s12 m6 w3-padding"" e garantir esse layout desejado-->
         <div class="w3-col s12 m6 w3-padding">
+            <!--Definição do container superior subtítulo h2 e cor de fundo-->
             <div class="w3-container" style="background-color: rgb(97, 103, 175); color:white;">
                 <h2>Tecnologia</h2>
             </div>
+            <!--Definição do card via framewrok e delimitação da área onde aparecerá o conteúdo-->
             <div class="w3-card">
-                <h3>Museu História do Computador</h2>
+                <h3><a class="text-link-decoration w3-hover-text-purple" href="https://www.tripadvisor.com.br/Attraction_Review-g303627-d4377383-Reviews-Museu_da_Historia_do_Computador-Sao_Carlos_State_of_Sao_Paulo.html" target="_blank">Museu História do Computador</a></h2>
+                <!--Definição de efeito padrão (com opacidade ligada) e efeito mouse em cima (hover) desliga a opacidade-->
                 <img src="images/Museu_do_Computador.jpg" style="width: 100%;" class="w3-opacity w3-hover-opacity-off">
+                <!--Definição do container via framework da parte branca onde estará a descrição-->
                 <div class="w3-container">
-                    <h4>Dispositivos antigos</h3>
+                    <h4>Descrição</h4>
+                    <p>Atrações: computadores antigos, evolução da tecnologia, exposições interativas e curiosidades da era digital.</p>
                 </div>
             </div>
         </div>
-
+        <!--Definição de 3 linhas com duas colunas para melhor vizualização. Aqui tive ajuda do CHAT GPT para encotnrar
+        essa propriedade ""w3-col s12 m6 w3-padding"" e garantir esse layout desejado-->
         <div class="w3-col s12 m6 w3-padding">
+            <!--Definição do container superior subtítulo h2 e cor de fundo-->
             <div class="w3-container" style="background-color: rgb(97, 103, 175); color:white;">
                 <h2>Religião</h2>
             </div>
+    <!--Definição do card via framewrok e delimitação da área onde aparecerá o conteúdo-->            
             <div class="w3-card">
-                <h3>Paróquia São Sebastião</h2>
+                <h3><a class="text-link-decoration w3-hover-text-purple" href="https://www.tripadvisor.com.br/Attraction_Review-g303627-d7082095-Reviews-Paroquia_Sao_Sebastiao-Sao_Carlos_State_of_Sao_Paulo.html" target="_blank">Paróquia São Sebastião</a></h2>
+                <!--Definição de efeito padrão (com opacidade ligada) e efeito mouse em cima (hover) desliga a opacidade-->
                 <img src="images/Paroquia_Sao_Sebastiao.jpg" class="imagem-fixa w3-opacity w3-hover-opacity-off">
+                <!--Definição do container via framework da parte branca onde estará a descrição-->
                 <div class="w3-container">
-                    <h4>Fachada da paróquia</h3>
+                    <h4>Descrição</h4>
+                    <p>Atrações: arquitetura histórica, missas, festas tradicionais, eventos religiosos e ambiente de fé e acolhimento.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
     <footer>
-        <div>
-            <p></p>
-            <p><a href="">https://www.tripadvisor.com.br/</a></p>
-        </div>
+        <!--tag hr para criar linha que será estilziada via CSS-->
+        <hr class="layout-lines">
+        <p class="copy-text">COPYRIGHT ©2025 MATHEUS MASSUDA.</p>
+        <!-- atributo class para estilização da fonte-->
+        <p class="alternative-text-grey">Fonte das imagens: <a class="w3-hover-text-purple" href="https://www.tripadvisor.com.br/" target="_blank">https://www.tripadvisor.com.br/</a></p>
     </footer>
 </body>
 </html>
