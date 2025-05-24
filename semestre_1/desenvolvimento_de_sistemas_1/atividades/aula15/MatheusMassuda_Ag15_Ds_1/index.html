@@ -25,16 +25,28 @@ Sistemas</title>
             margin-bottom: 12px;
         }
 
+        .alinha-texto {
+            margin-top: -10px;
+        }
+
+        
+        
+
         @media only screen and (max-width: 600px) {
-            #main {
+            #main, .main {
                 margin-left: 0;
                 padding: 10px;
             }
+
+            .w3-bar {
+                background-color: #222;
+            }
+          
         }
     </style>
 </head>
-<body class="w3-black" id="main">
-    <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+<body class="w3-black">
+    <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small main">
         <a href="#main" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
             <i class="fa fa-home w3-xxlarge"></i>
             <p>HOME</p>
@@ -46,6 +58,10 @@ Sistemas</title>
         <a href="#gradeC" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
             <i class="fa fa-columns w3-xxlarge"></i>
             <p>Grade Curricular</p>
+        </a>
+        <a href="#docentes" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa fa-address-card w3-xxlarge"></i>
+            <p>Docentes</p>
         </a>
         <a href="#mercado" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
             <i class="fa fa-handshake-o w3-xxlarge"></i>
@@ -62,17 +78,18 @@ Sistemas</title>
 
     </nav>
 
-    <div class="w3-top w3-hide-large w3-hide-medium">
+    <div class="w3-top w3-hide-large w3-hide-medium main">
         <nav class="w3-bar s3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="#home" class="w3-bar-item w3-button" style="width: 25%;">HOME</a>
-            <a href="#sobre" class="w3-bar-item w3-button" style="width: 25%;">SOBRE</a>
+            <a href="#home" class="w3-bar-item w3-button" style="width: 13%;">HOME</a>
+            <a href="#sobre" class="w3-bar-item w3-button" style="width: 20%;">SOBRE</a>
+            <a href="#docentes" class="w3-bar-item w3-button" style="width: 20%;">DOCENTES</a>
             <a href="#tecnologias" class="w3-bar-item w3-button" style="width: 27%;">TECNOLOGIAS</a>
-            <a href="#contato" class="w3-bar-item w3-button" style="width: 23%;">CONTATO</a>
+            <a href="#contato" class="w3-bar-item w3-button" style="width:20%;">CONTATO</a>
         </nav>
     </div>
 
     <!--CABEÇALHO-->
-    <div class="w3-padding-large" id="main">
+    <div class="w3-padding-large main" id="main">
         <header class="w3-container w3-padding-32 w3-center" id="#home">
             <h1>
                 <img src="IMG/logoCab.png" alt="Logo CPS GEEAD SP" class="w3-image" width="50%">
@@ -85,7 +102,7 @@ Sistemas</title>
     </div>
 
     <!--SOBRE-->
-    <div class="w3-content w3-padding-64" id="sobre">
+    <div class="w3-content w3-padding-64 main espaco-menu-fixo" id="sobre">
         <h2 class="w3-text-cyan">Sobre o Curso</h2>
         <hr style="width: 200px" class="w3-opacity">
 
@@ -126,7 +143,7 @@ digital</li>
     </div>
 
     <!--Grade Curricular-->
-    <div class=" w3-content" id="gradeC">
+    <div class=" w3-content main" id="gradeC">
         <h2 class="w3-text-cyan">Grade Curricular</h2>
         <hr style="width:200px" class="w3-opacity">
 
@@ -191,8 +208,55 @@ digital</li>
         </div>
     </div>
 
+    <!--Docentes-->
+    <div class="w3-padding-64 w3-content main" id="docentes">
+        <h2 class="w3-text-cyan">Docentes</h2>
+        <hr style="width: 200px; column-span: w3-opacity;" c>
+
+        <div class="w3-row w3-row-padding">
+            <div class="w3-half">
+                <img class="w3-opacity w3-hover-opacity-off" src="IMG/Cristina_Ozaka.jpg" alt="Professora Cristina" style="width: 100%; max-height: 400px; object-fit: cover;">
+            </div>
+
+            <div class="w3-half">
+                <h2 class="w3-text-cyan alinha-texto">Cristina Ozaka</h2>
+                
+                <h3 class="w3-text-cyan">
+                    <a href="https://www5.usp.br/tag/engenharia-de-software/" target="_blank" class="style="text-decoration: none; onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Formação Acadêmica</a>
+                </h3>
+                
+                <p>Graduada em Enganharia de Software pela Universidade de São Paulo (2016)</p>
+                <p>Mestre em Ciência de Dados e Inteligência Artificial pela Faculdade de Informática e Administração Paulista </p>
+                <h3 class="w3-text-cyan">Atuação Profissional</h3>
+                <p>Professora Titular da Universidade Federal de São Carlos. Experiência na área de Tecnologia integrada com meio ambiente.</p>
+            </div>
+
+        </div>
+
+        <div class="w3-row w3-row-padding w3-margin-top" style="display: flex; align-items: stretch;">
+            <div class="w3-half">
+                <img class="w3-opacity w3-hover-opacity-off" src="IMG/Paulo_Silveira.jpg" alt="Professora Cristina" style="width: 100%; max-height: 400px;  object-fit:cover;">
+            </div>
+
+            <div class="w3-half">
+                <h2 class="w3-text-cyan alinha-texto">Paulo Silveira</h2>
+
+                <h3 class="w3-text-cyan">
+                    <a href="https://www.fiap.com.br/" target="_blank" class="style="text-decoration: none; onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Formação Acadêmica</a>
+                </h3>
+
+                <p>Graduado em Administração pela Faculdade de informática e Administração Paulista (2013)</p>
+                <p>Mestre em Marketing Digital pela Faculdade de Informática e Administração Paulista </p>
+                <h3 class="w3-text-cyan">Atuação Profissional</h3>
+                <p>Gestão em Branding e Posicionamento de Marca na Alura. Experiência na área de Comunicação.</p>
+            </div>
+
+        </div>
+
+    </div>
+
     <!--Mercado-->
-    <div class="w3-padding-64 w3-content" id="mercado">
+    <div class="w3-padding-64 w3-content main" id="mercado">
         <h2 class="w3-text-cyan">Mercado de Trabalho</h2>
         <hr style="width: 200px;" class="w3-opacity">
 
@@ -253,7 +317,7 @@ digital</li>
     </div>
 
     <!--Tecnologias-->
-    <div class="w3-padding-64 w3-content" id="tecnologias">
+    <div class="w3-padding-64 w3-content main" id="tecnologias">
         <h2 class="w3-text-cyan">Tecnologias</h2>
         <hr style="width: 200px;" class="w3-opacity">
 
@@ -274,7 +338,7 @@ digital</li>
     </div>
 
     <!--Contato-->
-    <div class="w3-padding-128 w3-content w3-text-grey" id="contato">
+    <div class="w3-padding-128 w3-content w3-text-grey main" id="contato">
         <h2 class="w3-text-cyan">Contato</h2>
         <hr style="width: 200px;">
 
