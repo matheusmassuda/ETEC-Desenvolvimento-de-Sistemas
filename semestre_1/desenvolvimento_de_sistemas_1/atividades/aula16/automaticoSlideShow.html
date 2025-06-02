@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 class="w3-center">Slideshow Automático</h2>
+
+    <section class="w3-content w3-section w3-center" style="max-width: 500px;">
+            <img class="slide" src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/260DS0CNLKM91589912853165.jpg" alt="" style="width: 100%;">
+            <img class="slide" src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VHAUMBN792L91589912865216.jpg" alt="" style="width: 100%;">
+            <img class="slide" src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/K6O8KB4U20WN1589912864207.jpg" alt="" style="width: 100%;">
+            <img class="slide" src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg" alt="" style="width: 100%;">
+
+            <a href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/260DS0CNLKM91589912853165.jpg">Designed by Activizion Blizzard / World of Warcraft - Lordaeron</a>
+            <br>
+            <a href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VHAUMBN792L91589912865216.jpg">Designed by Activizion Blizzard / World of Warcraft - Stormwind City</a>
+            <br>
+            <a href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/K6O8KB4U20WN1589912864207.jpg">Designed by Activizion Blizzard / World of Warcraft - Stormsong Valley</a>
+            <br>
+            <a href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg">Designed by Activizion Blizzard / World of Warcraft - Ogrimmar</a>
+            <br>
+    </section>
+
+    <script>
+        var index = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            for(i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            index++
+            if (index > x.length) {index = 1}
+            x[index - 1].style.display = "block";
+            setTimeout(carousel, 3000); //Imagem troca a cada 2 segundos
+            }
+    </script>
+</body>
+</html>

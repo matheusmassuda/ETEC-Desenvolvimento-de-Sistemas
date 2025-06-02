@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <title>Slideshow Manual</title>
+
+    <style>
+    .slides {
+        display: none;
+    }
+</style>
+</head>
+<body>
+    
+    <h2 class="w3-center">Slideshow Manual</h2>
+
+    <div class="w3-content w3-display-container w3-center">
+        <img class="slides" src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/260DS0CNLKM91589912853165.jpg" style="width:100%">
+        <img class="slides" src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VHAUMBN792L91589912865216.jpg" style="width:100%">
+        <img class="slides" src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/K6O8KB4U20WN1589912864207.jpg" style="width:100%">
+        <img class="slides" src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg" style="width:100%">
+        
+        <a href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/260DS0CNLKM91589912853165.jpg">Designed by Blizzard / Lordaeron</a><br>
+        <a href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VHAUMBN792L91589912865216.jpg">Designed by Blizzard - Stormwind City</a><br>
+        <a href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/K6O8KB4U20WN1589912864207.jpg">Designed by Blizzard - Stormsong Valley</a><br>
+        <a href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg">Designed by Blizzard - Ogrimmar</a><br>
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-
+        1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right"
+        onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+
+        var x = document.getElementsByClassName("slides");
+
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+        
+        x[slideIndex-1].style.display = "block";
+
+        }
+
+    </script>
+
+    
+</body>
+</html>
