@@ -33,4 +33,26 @@ values
 (default, 'Rosana', '1969-01-09', 'F', '89', '1.63', default),
 (default, 'Kauê', '1994-03-10', 'M', '78', '1.75', default);
 
-select * from pessoas;
+-- Adiciona um campo (na última coluna) em uma tabela
+alter table pessoas
+add column profissao varchar(20) default 'Dev' after nome,
+add column nivel varchar(10) not null default '' after profissao;
+
+-- Altera o tamanho do tipo cadastrado ao campo
+alter table pessoas
+modify column profissao decimal(5,3);
+
+-- Altera exclusivamente o NOME do campo
+alter table pessoas
+change column profissao cargo varchar(20) not null default 'Dev';
+
+-- Altera o nome da TABELA inteira
+alter table pessoas
+rename to funcionarios;
+
+alter table pessoas
+drop column profissao;
+
+--
+describe funcionarios;
+select * from funcionarios;
