@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Brinco e Companhia</title>
+</head>
+
+<body class="w3-monospace">
+
+    <div class="w3-container w3-padding">
+        
+        <form class="w3-container custom-margins " id="colaboradores" name="colaboradores" method="post" action="processaCadastro.php">
+
+            <h1 class="w3-margin-bottom">formulário colaboradores</h1>
+
+            <p>
+                <label for="nomeCompleto">Nome</label>
+                <input class="w3-input" id="nomeCompleto" name="nomeCompleto" type="text" placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="idade">Idade</label>
+                <input class="w3-input" id="idadeColaborador" name="idadeColaborador" type="number" placeholder="Sua idade">
+            </p>
+            <p>
+                <label for="profissao">Profissão</label>
+                <input class="w3-input" id="profissaoColaborador" name="profissaoColaborador" type="text" placeholder="Cargo atual">
+            </p>
+            <p>
+                <label for="salarioPretendido">Pretenção salarial (R$)</label>
+                <input class="w3-input" id="salarioPretendido" name="salarioPretendido" type="text" placeholder="Valor desejado">
+            </p>
+            <p>
+                <label for="experiencias">Habilidades</label>
+                <textarea class="w3-input" name="experiencias" id="experiencias" placeholder="Descreva suas experiências profissionais"></textarea>
+            </p>
+           
+            <!--Submit-->
+            <input class="w3-button w3-dark-grey w3-right w3-round" id="btnEnviar" name="btnEnviar" type="submit" value="Enviar">
+            
+        </form>
+    </div>
+</body>
+
+<script>
+document.getElementById('salarioPretendido').addEventListener('input', function(e) {
+    let valor = e.target.value;
+
+    // Remove tudo que não for número
+    valor = valor.replace(/\D/g, '');
+
+    // Converte para centavos e formata
+    valor = (valor / 100).toFixed(2) + '';
+    valor = valor.replace('.', ',');
+    valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+    // Adiciona o "R$" na frente
+    e.target.value = 'R$ ' + valor;
+});
+</script>
+
+</html>
