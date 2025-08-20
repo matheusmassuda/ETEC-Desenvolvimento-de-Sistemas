@@ -1,0 +1,29 @@
+h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+h1.w3-border-bottom {
+    display: inline-block;
+    padding-bottom: 0.15em;
+}
+
+.custom-margin {
+    margin:10% 20%;
+}
+
+@media screen and (max-width: 400px) {
+    .custom-margin {
+        margin: 10% 5%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .custom-margin {
+        margin: 20% 10%;
+    }
+}
+
+
+

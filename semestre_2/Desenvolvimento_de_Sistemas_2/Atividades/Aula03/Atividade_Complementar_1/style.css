@@ -1,0 +1,28 @@
+
+h1 {
+    font-size: 1.8em;
+    font-weight:600;
+    text-transform: capitalize;
+}
+
+h1.w3-border-bottom {
+  display: inline-block; /* Faz o h1 ocupar só o espaço do texto */
+  padding-bottom: 4px;   /* Opcional: ajusta a distância do texto à borda */
+}
+
+.custom-margins {
+    margin: 10% 20%; 
+}
+
+
+@media screen and (max-width: 1024px) {
+    .custom-margins {
+        margin: 20% 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .custom-margins {
+        margin: 10% 5%;
+    }
+}
