@@ -1,0 +1,21 @@
+
+Tim Berners-Lee, cientista da computação britânico nascido em Londres em 1955, é o criador da World Wide Web. Em 1989, no CERN, desenvolveu a ideia de usar hipertexto para compartilhar informações entre pesquisadores. Para isso, criou protocolos como HTTP e a linguagem HTML, que tornaram a web acessível mundialmente. Um de seus maiores desafios foi propor algo inovador em uma internet ainda restrita. Ele optou por não patentear sua invenção, garantindo acesso livre e democrático. Hoje, vive na Inglaterra e segue atuando em iniciativas de privacidade e descentralização da web.
+
+[1° VERSÃO]
+
+Tim Berners-Lee is a computer scientist britsh born in London in 1955, he is a crator of World Wide Web.
+In 1989, in CERN, he developed na idea to use hipertexto to chare information btween researchers. For that,
+made protocols like HTTP and the language HTML (Hypertext Markup Language), wich turn the internet globally accessible. One of their most challenges was propose a something innovative when the internet was restricted.
+He choice to not patented your invention, ensuring democratyc and free acess. 
+Today, he lives in London and move on to create initiatives to privacy and descentralize to the internet.
+
+
+
+[CORRIGIDO]
+
+Tim Berners-Lee is a British computer scientist, born in London in 1955, and he is the creator of the World Wide Web.
+In 1989, at CERN, he developed the idea of using hypertext to share information between researchers.
+For that, he created protocols like HTTP and the HTML language (Hypertext Markup Language), which made the internet globally accessible.
+One of his biggest challenges was proposing something innovative when the internet was still restricted.
+He chose not to patent his invention, ensuring democratic and free access.
+Today, he lives in London and continues to create initiatives for privacy and the decentralization of the internet.
