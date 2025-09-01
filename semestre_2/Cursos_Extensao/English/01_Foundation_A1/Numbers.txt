@@ -25,7 +25,6 @@
 
 30* (Thirty) <===================
 31  Thirty one
-31  Thirty one
 32  Thirty two
 33  Thirty three
 34  Thirty four
@@ -48,8 +47,8 @@
 
 50* (Fifty) <===================
 51 Fifty one
-52  Fifty two
-53  Fifty three
+52 Fifty two
+53 Fifty three
 54 Fifty four
 55 Fifty five
 56 Fifty six
