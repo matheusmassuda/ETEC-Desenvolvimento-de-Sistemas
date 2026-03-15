@@ -29,6 +29,6 @@ select * from apartamento;
 
 -- faz o "chamamento" da função, selecione o n° e valor do apartamento da tabela apartamento para exibir, e além disso exibo o cálculo realizado
 -- pela function com o nome taxa_condominio
-SELECT a.numero, a.valor, CalculaTaxaCondominio(a.numero, 1) AS taxa_condominio
+SELECT a.numero, a.valor, CalculaTaxaCondominio(a.numero, 15) AS taxa_condominio
 FROM apartamento a
-WHERE a.codigo_cond = 2;
+WHERE a.codigo_cond = 1;
